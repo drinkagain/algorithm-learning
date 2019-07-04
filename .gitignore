@@ -9,7 +9,9 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
-
+algorithm-learning.iml
+.idea
+.mvn
 # Package Files #
 *.jar
 *.war
