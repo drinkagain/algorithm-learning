@@ -11,13 +11,13 @@ import java.util.Arrays;
  * *
  * @comment: 队列
  */
-public class MyQueue {
+public class Queue {
 
     private int[] queue;
     private int front;
     private int rear;
 
-    public MyQueue(int capacity) {
+    public Queue(int capacity) {
         this.queue = new int[capacity];
     }
 
@@ -46,7 +46,7 @@ public class MyQueue {
     }
 
     public static void main(String[] args) {
-        MyQueue queue = new MyQueue(8);
+        Queue queue = new Queue(8);
         queue.enQueue(3);
         queue.enQueue(4);
         queue.enQueue(6);
