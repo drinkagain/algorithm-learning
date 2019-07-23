@@ -19,7 +19,6 @@ public class CoherenceHash {
 
     private static SortedMap<Integer, String> virtualNodes = new TreeMap<>();
 
-    //虚拟节点的数目，这里写死，为了演示需要，一个真实结点对应5个虚拟节点
     private final static int VIRTUAL_NODES = 5;
 
     private final static String SYMBOL = "&&VN";
@@ -54,7 +53,7 @@ public class CoherenceHash {
         } else {
             virtualNode = map.get(map.firstKey());
         }
-        return virtualNode == null ? null : virtualNode.substring(0, virtualNode.indexOf("&&"));
+        return virtualNode == null ? null : virtualNode.substring(0, virtualNode.indexOf(SYMBOL));
     }
 
     //使用FNV1_32_HASH算法计算服务器的Hash值,这里不使用重写hashCode的方法，最终效果没区别
